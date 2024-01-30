@@ -1,0 +1,38 @@
+1.Idempotent vs Non-Idempotent
+2.Composition vs Aggregation
+
+===>>>   Idempotent vs Non-Idempotent    <<<===
+
+>>  Idempotent:
+    *  An operation is idempotent if it can be repeated many times, and the result will be
+       the same as if it were only performed once.
+
+    *  In the context of HTTP methods, an idempotent operation means that making multiple
+       identical requests has the same effect as making a single request.
+
+    *  The HTTP methods GET, HEAD, PUT, and DELETE are generally considered idempotent.
+
+>>  Non-Idempotent:
+    * An operation is non-idempotent if repeating the operation may lead to different
+      outcomes or side effects.
+
+    * In the context of HTTP methods, a non-idempotent operation means that making multiple
+      identical requests may have different effects than making a single request.
+
+    * The HTTP methods POST, PATCH, and DELETE (when used with certain conditions)
+      are typically considered non-idempotent.
+
+===>>>   Composition vs Aggregation    <<<===
+
+>>  Composition:
+    * Composition is a strong form of association where one class (the whole)
+      is composed of objects of another class (the part).
+
+    * The composed objects are typically an integral part of the whole, and their
+      lifecycles are tightly coupled.
+
+>>  Aggregation:
+    * Aggregation is a weaker form of association where one class is associated with another class,
+      but they have independent lifecycles.
+
+    * The associated objects (parts) can exist independently of the whole.
